@@ -31,16 +31,16 @@ EMOJI_SEN = [
 ]
 
 KANGING_STR = [
+    "Stealing your sticker ni@@a...",
+    "Nabajyoti got your sticker! Sorry...",
+    "That's what she said...",
     "Using Witchery to kang this sticker...",
-    "Plagiarising hehe...",
-    "Inviting this sticker over to my pack...",
-    "Kanging this sticker...",
+    "Ni@@a you g@@, but not your sticker...",
+    "Taking this sticker over to my pack...",
     "Hey that's a nice sticker!\nMind if I kang?!..",
-    "hehe me stel ur stikér\nhehe.",
+    "hehe me GoD of DeaTh, your sticker ded too...",
     "Ay look over there (☉｡☉)!→\nWhile I kang this...",
-    "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
     "Imprisoning this sticker...",
-    "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
 
@@ -603,15 +603,15 @@ async def cb_sticker(event):
 CMD_HELP.update(
     {
         "stickers": "__**PLUGIN NAME :** Stickers__\
-\n\n📌** CMD ➥** `.kang`\
+\n\n📌** CMD ➥** `.thanks`\
 \n**USAGE   ➥  **Reply .kang to a sticker or an image to kang it to your userbot pack.\
-\n\n📌** CMD ➥** `.kang [emoji('s)]`\
+\n\n📌** CMD ➥** `.thanks [emoji('s)]`\
 \n**USAGE   ➥  **Works just like .kang but uses the emoji('s) you picked.\
-\n\n📌** CMD ➥** `.kang [number]`\
+\n\n📌** CMD ➥** `.thanks [number]`\
 \n**USAGE   ➥  **Kang's the sticker/image to the specified pack but uses 🤔 as emoji.\
-\n\n📌** CMD ➥** `.kang [emoji('s)] [number]`\
+\n\n📌** CMD ➥** `.thanks [emoji('s)] [number]`\
 \n**USAGE   ➥  **Kang's the sticker/image to the specified pack and uses the emoji('s) you picked.\
-\n\n📌** CMD ➥** `.pkang [number]`\
+\n\n📌** CMD ➥** `.pthanks [number]`\
 \n**USAGE   ➥  **Kang's the entire sticker pack of replied sticker to the specified pack \
 \n\n📌** CMD ➥** `.stickers name`\
 \n**USAGE   ➥  **Shows you the list of non-animated sticker packs with that name.\
