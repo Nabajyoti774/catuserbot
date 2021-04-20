@@ -1,4 +1,4 @@
-# modified and developed by @mrconfused
+# modified and developed by @God of Death
 
 import asyncio
 import base64
@@ -225,8 +225,8 @@ async def add_to_pack(
     return pack, packname
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="kang ?(.*)"))
-@bot.on(sudo_cmd(pattern="kang ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="thanks ?(.*)"))
+@bot.on(sudo_cmd(pattern="thanks ?(.*)", allow_sudo=True))
 async def kang(args):
     photo = None
     emojibypass = False
