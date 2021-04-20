@@ -227,7 +227,7 @@ async def add_to_pack(
 
 @bot.on(admin_cmd(outgoing=True, pattern="thanks ?(.*)"))
 @bot.on(sudo_cmd(pattern="thanks ?(.*)", allow_sudo=True))
-async def kang(args):
+async def thanks(args):
     photo = None
     emojibypass = False
     is_anim = False
