@@ -108,7 +108,7 @@ async def newpacksticker(
     packname,
     is_anim,
     otherpack=False,
-    pkang=False,
+    pthanks=False,
 ):
     await conv.send_message(cmd)
     await conv.get_response()
@@ -150,7 +150,7 @@ async def newpacksticker(
     await args.client.send_read_acknowledge(conv.chat_id)
     await conv.get_response()
     await args.client.send_read_acknowledge(conv.chat_id)
-    if not pkang:
+    if not pthanks:
         return otherpack, packname, emoji
     return pack, packname
 
@@ -167,7 +167,7 @@ async def add_to_pack(
     stfile,
     emoji,
     cmd,
-    pkang=False,
+    pthanks=False,
 ):
     await conv.send_message("/addsticker")
     await conv.get_response()
@@ -200,7 +200,7 @@ async def add_to_pack(
                 packname,
                 is_anim,
                 otherpack=True,
-                pkang=pkang,
+                pthanks=pthanks,
             )
     if is_anim:
         await conv.send_file("AnimatedSticker.tgs")
@@ -220,7 +220,7 @@ async def add_to_pack(
     await conv.send_message("/done")
     await conv.get_response()
     await args.client.send_read_acknowledge(conv.chat_id)
-    if not pkang:
+    if not pthanks:
         return packname, emoji
     return pack, packname
 
@@ -369,8 +369,8 @@ async def thanks(args):
                 )
 
 
-@bot.on(admin_cmd(pattern="pkang ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="pkang ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="pthanks ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="pthanks ?(.*)", allow_sudo=True))
 async def pack_kang(event):
     if event.fwd_from:
         return
@@ -503,7 +503,7 @@ async def pack_kang(event):
                         emoji,
                         packname,
                         is_anim,
-                        pkang=True,
+                        pthanks=True,
                     )
             else:
                 async with event.client.conversation("Stickers") as conv:
@@ -519,7 +519,7 @@ async def pack_kang(event):
                         stfile,
                         emoji,
                         cmd,
-                        pkang=True,
+                        pthanks=True,
                     )
             if catpackname not in blablapacks:
                 blablapacks.append(catpackname)
